@@ -71,3 +71,10 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+## Steps to start the application
+
+- npm ci
+- Need to update env variables for postgresql db
+- npm run start:dev
