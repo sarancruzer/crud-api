@@ -26,4 +26,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     }),
   ],
 })
-export class DatabaseModule {}
+export class DatabaseModule {
+  constructor() {
+    const host = new ConfigService().get('DB_HOST');
+    console.log(
+      '🚀 ~ file: database.module.ts ~ line 32 ~ DatabaseModule ~ constructor ~ host',
+      host,
+    );
+  }
+}
